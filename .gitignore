@@ -3,3 +3,8 @@ node_modules/
 .firebase/
 *.log
 .firebaserc.local
+
+# Personal documents
+職務経歴書*.pdf
+個人経歴.jpeg
+会社職務経歴*.jpeg
