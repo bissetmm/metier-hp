@@ -754,11 +754,109 @@ body.is-modal-open {
   transform: translateX(4px);
 }
 
-/* ---------- Career / Timeline ---------- */
-.career {
+/* ---------- Labs ---------- */
+.labs {
   background: var(--color-surface);
 }
 
+.labs__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.lab-card {
+  background: #fff;
+  padding: clamp(28px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition:
+    transform 0.4s var(--ease),
+    box-shadow 0.4s var(--ease);
+}
+
+.lab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+.lab-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.lab-card__tag {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+.lab-card__year {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.lab-card__title {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.lab-card__desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.lab-card__highlights {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--color-muted);
+}
+
+.lab-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.lab-card__tech span {
+  font-size: 11px;
+  padding: 4px 10px;
+  background: var(--color-surface);
+  letter-spacing: 0.04em;
+  color: #555;
+}
+
+.lab-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-line);
+}
+
+.lab-card__soon {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-line);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
+/* ---------- Career / Timeline ---------- */
 .timeline {
   position: relative;
   padding-left: 24px;
@@ -842,6 +940,10 @@ body.is-modal-open {
 }
 
 /* ---------- History ---------- */
+.history {
+  background: var(--color-surface);
+}
+
 .history__tabs {
   display: flex;
   flex-wrap: wrap;
@@ -938,7 +1040,8 @@ body.is-modal-open {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .works__list {
+  .works__list,
+  .labs__list {
     grid-template-columns: 1fr;
   }
 

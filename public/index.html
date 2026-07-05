@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?v=20260705" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
@@ -60,6 +60,13 @@
                 <a href="#skills"
                   ><span class="roll-menu"
                     ><span data-txt="Skills">Skills</span></span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#labs"
+                  ><span class="roll-menu"
+                    ><span data-txt="Labs">Labs</span></span
                   ></a
                 >
               </li>
@@ -427,7 +434,7 @@
                   </div>
                   <h3 class="work-card__title">ブランドプロモーションサイト</h3>
                   <p class="work-card__desc">
-                    大規模ブランドプロモーションプロジェクトのWebチームに参加。デザインに基づくフロントエンド実装およびバックエンドコーディングを担当。
+                    大規模ブランドプロモーションプロジェクトのWebチームに参加。紙媒体の電子版を目指したデジタルパブリッシングをコンセプトに、フォント・グラフィックなどの配置をデザインカンプに基づきパーフェクトピクセルで忠実に再現。デザインは各種媒体や空間デザインで有名なグッドデザインカンパニーによるもの。フロントエンド実装およびバックエンドコーディングを担当。
                   </p>
                   <div class="work-card__tech">
                     <span>PHP</span><span>Slim</span><span>Sass</span
@@ -596,6 +603,21 @@
                   </ul>
                 </div>
               </div>
+            </div>
+          </section>
+
+          <!-- Labs -->
+          <section class="section labs" id="labs">
+            <div class="section__inner">
+              <div class="section__head js-fadein">
+                <p class="section__label">Labs</p>
+                <h2 class="section__title">実験室</h2>
+                <p class="section__lead">
+                  テスト・学習用に作成したデモと技術メモ。公開リポジトリ・デモ環境・解説記事など。
+                </p>
+              </div>
+
+              <div class="labs__list" id="labsList"></div>
             </div>
           </section>
 
@@ -1030,8 +1052,10 @@
       </div>
     </div>
 
-    <script src="js/works-data.js"></script>
-    <script src="js/works-modal.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/works-data.js?v=20260705"></script>
+    <script src="js/works-modal.js?v=20260705"></script>
+    <script src="js/labs-data.js?v=20260705"></script>
+    <script src="js/labs.js?v=20260705"></script>
+    <script src="js/main.js?v=20260705"></script>
   </body>
 </html>
