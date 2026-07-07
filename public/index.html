@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css?v=20260705" />
+    <link rel="stylesheet" href="css/style.css?v=20260707b" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
@@ -46,6 +46,13 @@
                 <a href="#about"
                   ><span class="roll-menu"
                     ><span data-txt="About">About</span></span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#journey"
+                  ><span class="roll-menu"
+                    ><span data-txt="Journey">Journey</span></span
                   ></a
                 >
               </li>
@@ -136,7 +143,7 @@
                 </div>
                 <div class="about__body js-fadein">
                   <p>
-                    商業施設の設計・デザイン、開発コンサルティングを経てシステム開発へ転身。現在は企画・要件整理からアーキテクチャ設計、UI/UX設計、実装までを一貫して担当するフルスタックエンジニアとして活動しています。
+                    商業施設の設計・デザイン、開発コンサルティングを経てシステム開発へ転身。プログラミングは独学で習得し、最初の本格的な開発はASP.NET（C#）によるWebアプリケーションおよび業務システムからスタートしました。その後、React・Angular・Next.jsなどのJavaScript/TypeScriptエコシステム、Firebase・Azureなどのクラウド基盤へと技術スタックを拡張。現在は企画・要件整理からアーキテクチャ設計、UI/UX設計、実装までを一貫して担当するフルスタックエンジニアとして活動しています。
                   </p>
                   <p>
                     単なる実装ではなく、顧客や利用者の課題を整理し、業務・システム・ユーザー体験を俯瞰しながら最適な形へ落とし込むことを得意としています。設計・コンサルティングで培った「課題を整理し、形にする力」を強みとし、事業課題をシステムによって解決することを常に意識して取り組んできました。
@@ -175,17 +182,143 @@
             </div>
           </section>
 
+          <!-- Tech Journey -->
+          <section class="section journey" id="journey">
+            <div class="section__inner">
+              <div class="section__head js-fadein">
+                <p class="section__label">Journey</p>
+                <h2 class="section__title">技術キャリアマップ</h2>
+                <p class="section__lead">
+                  面接や自己紹介で「どのように技術を積み上げてきたか」を時系列で説明するための全体像です。左から右へ、学習・基盤構築・モダン化・アーキテクチャへと進んできた流れを示しています。
+                </p>
+              </div>
+
+              <div class="journey__map js-fadein">
+                <div class="journey__track" aria-hidden="true"></div>
+
+                <article class="journey__node">
+                  <p class="journey__era">1990s末 — 2000年代初</p>
+                  <h3 class="journey__title">学習・転身</h3>
+                  <p class="journey__desc">
+                    インテリアデザイン・商業施設コンサルティングの実務を経て、独学でプログラミングを習得。設計・企画で培った「課題を整理する力」を活かし、システム開発へキャリアをシフト。
+                  </p>
+                  <ul class="journey__tech">
+                    <li>独学（言語基礎）</li>
+                    <li>HTML / CSS</li>
+                    <li>UI設計の知見</li>
+                  </ul>
+                </article>
+
+                <article class="journey__node">
+                  <p class="journey__era">2000s — 2010年代初</p>
+                  <h3 class="journey__title">ASP.NET / C# 基盤期</h3>
+                  <p class="journey__desc">
+                    C# / ASP.NET MVC・WebForms
+                    を中心に、コーポレートサイト、ECカスタマイズ、業務Webアプリを企画から実装まで担当。IIS・SQL
+                    Server によるオンプレ／Windows系Web基盤を実践的に習得。
+                  </p>
+                  <ul class="journey__tech">
+                    <li>C# / ASP.NET MVC</li>
+                    <li>ASP.NET WebForms</li>
+                    <li>SQL Server / ADO.NET</li>
+                    <li>IIS / Bootstrap</li>
+                  </ul>
+                </article>
+
+                <article class="journey__node">
+                  <p class="journey__era">2010s後半 — 2020年代初</p>
+                  <h3 class="journey__title">モダンJS・クラウド移行</h3>
+                  <p class="journey__desc">
+                    フロントエンドを React・Angular・Next.js
+                    へ移行。バックエンドも Node.js / NestJS、Firebase、Azure
+                    などクラウドネイティブ基盤へ拡張。BtoC大規模アプリ、CMS統合、マッチングアプリなどSPA・SSR中心の開発へ。
+                  </p>
+                  <ul class="journey__tech">
+                    <li>React / Angular / Next.js</li>
+                    <li>TypeScript / Node.js</li>
+                    <li>Firebase / Azure</li>
+                    <li>PHP / Python（併用）</li>
+                  </ul>
+                </article>
+
+                <article class="journey__node journey__node--current">
+                  <p class="journey__era">2023 — 現在</p>
+                  <h3 class="journey__title">設計主導・SaaS / AI</h3>
+                  <p class="journey__desc">
+                    マルチテナントSaaSのアーキテクチャ検討、BI基盤、EdTech
+                    SPA刷新など、実装に加え設計・方式検討の比重が増加。生成AIを開発プロセスへ取り入れ、要件整理からクラウド設計まで一貫して支援。
+                  </p>
+                  <ul class="journey__tech">
+                    <li>アーキテクチャ設計</li>
+                    <li>認証認可 / マルチテナント</li>
+                    <li>NestJS / .NET Core</li>
+                    <li>生成AI活用</li>
+                  </ul>
+                </article>
+              </div>
+
+              <p class="journey__note js-fadein">
+                各時代の代表的な実績は
+                <a href="#works" class="link-arrow">Works</a>
+                セクションで時代別にまとめています。
+              </p>
+            </div>
+          </section>
+
           <!-- Works -->
           <section class="section works" id="works">
             <div class="section__inner">
               <div class="section__head js-fadein">
                 <p class="section__label">Works</p>
                 <h2 class="section__title">主な実績</h2>
+                <p class="section__lead">
+                  まず下の時代別サマリーで全体像を把握し、気になる案件のカードを開いて詳細を確認できます。
+                </p>
+              </div>
+
+              <div class="works__overview js-fadein">
+                <a href="#works-era-recent" class="works__era-card">
+                  <p class="works__era-label">2023 — 現在</p>
+                  <h3 class="works__era-title">
+                    アーキテクチャ・SaaS・大規模SPA
+                  </h3>
+                  <p class="works__era-desc">
+                    マルチテナントSaaSの方式検討、BIダッシュボード、EdTech
+                    SPA刷新、B2Bプラットフォームなど。設計と実装の両面で参画。
+                  </p>
+                  <span class="works__era-link">この時期の実績へ →</span>
+                </a>
+                <a href="#works-era-modern" class="works__era-card">
+                  <p class="works__era-label">2018 — 2022</p>
+                  <h3 class="works__era-title">モダンJS・クラウド基盤</h3>
+                  <p class="works__era-desc">
+                    React / Angular / Next.js と Firebase・Azure
+                    を組み合わせたBtoCアプリ、CMS統合、マッチングプラットフォームなど。
+                  </p>
+                  <span class="works__era-link">この時期の実績へ →</span>
+                </a>
+                <a href="#works-era-foundation" class="works__era-card">
+                  <p class="works__era-label">〜 2017</p>
+                  <h3 class="works__era-title">ASP.NET・Web基盤期</h3>
+                  <p class="works__era-desc">
+                    ASP.NET MVC / WebForms
+                    によるコーポレートサイト、EC、ブランドプロモーション。企画・UI設計から実装まで一貫。
+                  </p>
+                  <span class="works__era-link">この時期の実績へ →</span>
+                </a>
               </div>
 
               <div class="works__list">
+                <div class="works__era-head js-fadein" id="works-era-recent">
+                  <p class="works__era-head-label">2023 — 現在</p>
+                  <h3 class="works__era-head-title">
+                    アーキテクチャ・SaaS・大規模SPA
+                  </h3>
+                </div>
+
                 <article
                   class="work-card work-card--private js-fadein"
+                  id="work-cpm"
                   data-work-id="cpm"
                 >
                   <div class="work-card__meta">
@@ -196,6 +329,9 @@
                   <h3 class="work-card__title">
                     クラウド型経営管理SaaS（CPM）アーキテクチャ検討支援
                   </h3>
+                  <p class="work-card__pitch">
+                    「15名規模のマルチテナントSaaSで、認証認可・BI連携・RLSなど横断課題の方式検討と設計ドキュメント化を支援」
+                  </p>
                   <p class="work-card__desc">
                     マルチテナントSaaSの認証認可方式、BI連携、RLS、多言語対応など横断技術課題の調査・比較検討。基本設計・アーキテクチャ検討を支援。
                   </p>
@@ -208,6 +344,7 @@
 
                 <article
                   class="work-card work-card--private js-fadein"
+                  id="work-edtech-flashcard-v2"
                   data-work-id="edtech-flashcard-v2"
                 >
                   <div class="work-card__meta">
@@ -218,6 +355,10 @@
                   <h3 class="work-card__title">
                     小中学生向けフラッシュカード学習 Web アプリ v2 刷新
                   </h3>
+                  <p class="work-card__pitch">
+                    「Angular 20
+                    Zonelessで20画面超の学習SPAを刷新し、リアルタイム対戦まで実装」
+                  </p>
                   <p class="work-card__desc">
                     小中学生向けオンライン学習サービスのフロントエンド刷新。フラッシュカード学習、リアルタイム対戦、ジャーニー、学習統計など多機能SPAをAngular
                     20 Zoneless アーキテクチャで再構築。
@@ -231,6 +372,7 @@
 
                 <article
                   class="work-card work-card--private js-fadein"
+                  id="work-apa-maker"
                   data-work-id="apa-maker"
                 >
                   <div class="work-card__meta">
@@ -241,6 +383,9 @@
                   <h3 class="work-card__title">
                     不動産物件スクレイピング・LINE配信管理システム（APA Maker）
                   </h3>
+                  <p class="work-card__pitch">
+                    「5ポータル分の物件を集約し、条件フィルタ後にLINE自動配信する業務ツールを構築・本番運用」
+                  </p>
                   <p class="work-card__desc">
                     複数不動産ポータルから収集した物件データを一元管理し、プロジェクト単位の条件でフィルタリングしたうえでLINE
                     Messaging API
@@ -254,6 +399,7 @@
 
                 <article
                   class="work-card work-card--private js-fadein"
+                  id="work-data-bi"
                   data-work-id="data-bi"
                 >
                   <div class="work-card__meta">
@@ -264,6 +410,9 @@
                   <h3 class="work-card__title">
                     データ分析基盤・ダッシュボード開発
                   </h3>
+                  <p class="work-card__pitch">
+                    「分析ダッシュボードの運用ルール策定からBFF連携まで、FE/BE/DB横断の機能を設計・実装」
+                  </p>
                   <p class="work-card__desc">
                     分析ダッシュボードにおけるフロント／バック／DBを跨ぐ機能設計・実装。運用ルール策定、BFF連携、分析UXを意識した状態管理設計。
                   </p>
@@ -275,6 +424,7 @@
 
                 <article
                   class="work-card work-card--private js-fadein"
+                  id="work-fuma"
                   data-work-id="fuma"
                 >
                   <div class="work-card__meta">
@@ -285,6 +435,9 @@
                   <h3 class="work-card__title">
                     FUMA（企業リスト作成サービス）開発
                   </h3>
+                  <p class="work-card__pitch">
+                    「160万社DBのB2B検索サービスで、SSR/SEOとRedisによるアクセス制御を4ヶ月で実装」
+                  </p>
                   <p class="work-card__desc">
                     全国160万社の企業情報を検索・閲覧できるB2B向けWebサービス。Next.jsによるSSR/SEO対応、Redis
                     + Middleware
@@ -305,7 +458,11 @@
                   </div>
                 </article>
 
-                <article class="work-card js-fadein" data-work-id="ai-saas">
+                <article
+                  class="work-card js-fadein"
+                  id="work-ai-saas"
+                  data-work-id="ai-saas"
+                >
                   <div class="work-card__meta">
                     <span class="work-card__tag">SaaS / AI</span>
                     <span class="work-card__year">2024</span>
@@ -313,6 +470,9 @@
                   <h3 class="work-card__title">
                     AI活用型SaaSプロダクト立ち上げ支援（MVP開発）
                   </h3>
+                  <p class="work-card__pitch">
+                    「業界特化AIサービスのMVPを約3ヶ月で社内レビュー版まで構築し、外部公開に貢献」
+                  </p>
                   <p class="work-card__desc">
                     スタートアップにおける業界特化型AIサービスのMVP開発。Next.jsによるフロントエンド設計・実装、API連携、LP制作を担当。約3か月で社内レビュー版を構築し、外部公開を実現。
                   </p>
@@ -332,7 +492,11 @@
                   </div>
                 </article>
 
-                <article class="work-card js-fadein" data-work-id="edtech">
+                <article
+                  class="work-card js-fadein"
+                  id="work-edtech"
+                  data-work-id="edtech"
+                >
                   <div class="work-card__meta">
                     <span class="work-card__tag">EdTech</span>
                     <span class="work-card__year">2023–2025</span>
@@ -340,6 +504,9 @@
                   <h3 class="work-card__title">
                     全国小学校向けデジタル教材サービス
                   </h3>
+                  <p class="work-card__pitch">
+                    「10名チームの教材プロジェクトで、Figmaデザインを忠実に再現するReactダッシュボードを実装」
+                  </p>
                   <p class="work-card__desc">
                     民間教科書会社のデジタル教材開発。ダッシュボードのUI/UXデザインに基づくReact実装、教材サイト管理ユーティリティ開発を担当。Figmaからの忠実な再現に貢献。
                   </p>
@@ -358,7 +525,16 @@
                   </div>
                 </article>
 
-                <article class="work-card js-fadein" data-work-id="nesttools">
+                <div class="works__era-head js-fadein" id="works-era-modern">
+                  <p class="works__era-head-label">2018 — 2022</p>
+                  <h3 class="works__era-head-title">モダンJS・クラウド基盤</h3>
+                </div>
+
+                <article
+                  class="work-card js-fadein"
+                  id="work-nesttools"
+                  data-work-id="nesttools"
+                >
                   <div class="work-card__meta">
                     <span class="work-card__tag">Corporate / CMS</span>
                     <span class="work-card__year">2020–2021</span>
@@ -366,6 +542,10 @@
                   <h3 class="work-card__title">
                     キャンピングカーカスタムメーカーサイト
                   </h3>
+                  <p class="work-card__pitch">
+                    「老朽WordPressをFirebase統合基盤へ移行し、Next.js＋Angular
+                    CMSを2名で再構築」
+                  </p>
                   <p class="work-card__desc">
                     老朽化したWordPressサイトをFirebaseへ統合再構築。Next.jsによるフロントエンドとAngularによるCMSを設計・実装。
                   </p>
@@ -387,6 +567,7 @@
 
                 <article
                   class="work-card work-card--private js-fadein"
+                  id="work-travel-app"
                   data-work-id="travel-app"
                 >
                   <div class="work-card__meta">
@@ -394,6 +575,10 @@
                     <span class="work-card__badge">非公開</span>
                   </div>
                   <h3 class="work-card__title">旅行計画作成アプリ</h3>
+                  <p class="work-card__pitch">
+                    「Azure
+                    B2C連携の大規模BtoC旅行アプリで、Angular/Next.jsのフロントとバックエンドを担当」
+                  </p>
                   <p class="work-card__desc">
                     フロントエンド（デザイン・実装）およびバックエンドコーディング。Angular
                     / Next.js / Azure（SQL Server, App Service, Storage,
@@ -407,6 +592,7 @@
 
                 <article
                   class="work-card work-card--private js-fadein"
+                  id="work-matching-app"
                   data-work-id="matching-app"
                 >
                   <div class="work-card__meta">
@@ -416,6 +602,10 @@
                   <h3 class="work-card__title">
                     モデルエージェンシー / クライアントマッチングアプリ
                   </h3>
+                  <p class="work-card__pitch">
+                    「LINE
+                    LIFF上のマッチングアプリを1名体制で設計から実装まで完遂」
+                  </p>
                   <p class="work-card__desc">
                     フロントエンド・バックエンドコーディング。Next.js / LIFF /
                     React / Firebase（Hosting, Firestore, Storage,
@@ -427,12 +617,27 @@
                   </div>
                 </article>
 
-                <article class="work-card js-fadein" data-work-id="brand-promo">
+                <div
+                  class="works__era-head js-fadein"
+                  id="works-era-foundation"
+                >
+                  <p class="works__era-head-label">〜 2017</p>
+                  <h3 class="works__era-head-title">ASP.NET・Web基盤期</h3>
+                </div>
+
+                <article
+                  class="work-card js-fadein"
+                  id="work-brand-promo"
+                  data-work-id="brand-promo"
+                >
                   <div class="work-card__meta">
                     <span class="work-card__tag">Brand Promotion</span>
                     <span class="work-card__badge">公開終了</span>
                   </div>
                   <h3 class="work-card__title">ブランドプロモーションサイト</h3>
+                  <p class="work-card__pitch">
+                    「有名デザイン事務所案件で、デザインカンプをパーフェクトピクセル再現するプロモサイトを実装」
+                  </p>
                   <p class="work-card__desc">
                     大規模ブランドプロモーションプロジェクトのWebチームに参加。紙媒体の電子版を目指したデジタルパブリッシングをコンセプトに、フォント・グラフィックなどの配置をデザインカンプに基づきパーフェクトピクセルで忠実に再現。デザインは各種媒体や空間デザインで有名なグッドデザインカンパニーによるもの。フロントエンド実装およびバックエンドコーディングを担当。
                   </p>
@@ -453,12 +658,16 @@
 
                 <article
                   class="work-card js-fadein"
+                  id="work-brand-review"
                   data-work-id="brand-review"
                 >
                   <div class="work-card__meta">
                     <span class="work-card__tag">Brand Review</span>
                   </div>
                   <h3 class="work-card__title">ブランドレビューサイト</h3>
+                  <p class="work-card__pitch">
+                    「ブランドレビューサイトを共同企画からASP.NET管理ツールまで一気通貫で開発」
+                  </p>
                   <p class="work-card__desc">
                     共同企画、UI設計、実装、管理ツール開発。
                   </p>
@@ -477,12 +686,19 @@
                   </div>
                 </article>
 
-                <article class="work-card js-fadein" data-work-id="corporate">
+                <article
+                  class="work-card js-fadein"
+                  id="work-corporate"
+                  data-work-id="corporate"
+                >
                   <div class="work-card__meta">
                     <span class="work-card__tag">Corporate</span>
                     <span class="work-card__year">2014–2015</span>
                   </div>
                   <h3 class="work-card__title">建設会社コーポレートサイト</h3>
+                  <p class="work-card__pitch">
+                    「業界慣習にとらわれないサイトを、企画・デザイン・プロカメラマンによる撮影・ASP.NET実装まで3名で実現」
+                  </p>
                   <p class="work-card__desc">
                     企画、デザイン、UI設計、実装、管理ツール。業界サイトらしくないデザインを希望するオーナーの要望に応えたサイトを実現。
                   </p>
@@ -501,11 +717,18 @@
                   </div>
                 </article>
 
-                <article class="work-card js-fadein" data-work-id="portal">
+                <article
+                  class="work-card js-fadein"
+                  id="work-portal"
+                  data-work-id="portal"
+                >
                   <div class="work-card__meta">
                     <span class="work-card__tag">Portal</span>
                   </div>
                   <h3 class="work-card__title">プロジェクトポータルサイト</h3>
+                  <p class="work-card__pitch">
+                    「複数プロジェクトの情報ポータルを、UI設計から実装・運用管理まで担当」
+                  </p>
                   <p class="work-card__desc">
                     参加プロジェクトのポータル。UI設計、実装、管理。
                   </p>
@@ -523,7 +746,11 @@
                   </div>
                 </article>
 
-                <article class="work-card js-fadein" data-work-id="ec-vendor">
+                <article
+                  class="work-card js-fadein"
+                  id="work-ec-vendor"
+                  data-work-id="ec-vendor"
+                >
                   <div class="work-card__meta">
                     <span class="work-card__tag">EC / 受託</span>
                     <span class="work-card__year">2017–2019</span>
@@ -531,6 +758,10 @@
                   <h3 class="work-card__title">
                     ECサイト（ベンダーパッケージカスタマイズ）
                   </h3>
+                  <p class="work-card__pitch">
+                    「ASP.NET
+                    ECパッケージのUIカスタマイズと、通販ERP連動ライブラリの開発を担当」
+                  </p>
                   <p class="work-card__desc">
                     システム会社からの受託案件。クライアント提供デザインをベンダーECパッケージに合わせてカスタマイズ。システムページの実装・管理を担当。
                   </p>
@@ -639,6 +870,30 @@
                     <h3>企画・設計・開発（フルスタック）</h3>
                     <p>
                       要件整理からアーキテクチャ設計、UI/UX、実装まで一貫して担当。Webアプリケーション開発を中心に、認証認可・API設計・クラウド環境を含むシステム全体の設計・実装。生成AIを開発プロセスへ取り入れ、設計品質と開発効率の向上にも取り組んでいます。
+                    </p>
+                    <p class="timeline__tech-note">
+                      技術：<a href="#journey">Journey</a>参照 — React / Angular
+                      / Next.js、NestJS / .NET Core、Firebase /
+                      Azure、マルチテナントSaaS設計
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline__item js-fadein">
+                  <div class="timeline__phase">2010s後半 —</div>
+                  <div class="timeline__body">
+                    <h3>モダンJS・クラウドへの移行</h3>
+                    <p>
+                      ASP.NET中心の開発から、React・Angular・Next.jsを用いたSPA/SSR開発へシフト。Firebase・Azureを活用したBtoCアプリ、CMS統合、マッチングプラットフォームなど、Node.jsエコシステムとクラウド基盤を組み合わせた開発へ拡張。
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline__item js-fadein">
+                  <div class="timeline__phase">2000s — 2010年代初</div>
+                  <div class="timeline__body">
+                    <h3>プログラミング学習・ASP.NET開発</h3>
+                    <p>
+                      独学でプログラミングを習得し、C# / ASP.NET
+                      MVC・WebFormsによるWebアプリケーションおよび業務システムの開発を開始。コーポレートサイト、ECカスタマイズ、ブランドプロモーションなど、企画・UI設計から実装・運用まで一貫して担当。
                     </p>
                   </div>
                 </div>
@@ -749,7 +1004,7 @@
                   <ul class="history__list">
                     <li>
                       <span class="history__date">91.7</span
-                      ><span>午後の里ヴィラ計画コンセプト策定</span>
+                      ><span>合歓の里ヴィラ計画コンセプト策定</span>
                     </li>
                     <li>
                       <span class="history__date">92.2</span
@@ -770,7 +1025,7 @@
                     <li>
                       <span class="history__date">93.3</span
                       ><span
-                        >門馬地区第二東名建設に伴う土地利用構想（株パスコ）</span
+                        >門間地区第二東名建設に伴う土地利用構想（株パスコ）</span
                       >
                     </li>
                     <li>
@@ -859,7 +1114,7 @@
                     </li>
                     <li>
                       <span class="history__date">91.9</span
-                      ><span>熊本土合マリーナ・フィージビリティプラン</span>
+                      ><span>熊本樋合マリーナ・フィージビリティプラン</span>
                     </li>
                     <li>
                       <span class="history__date">91.9</span
@@ -901,7 +1156,7 @@
                     </li>
                     <li>
                       <span class="history__date">92.10</span
-                      ><span>マリンメッセ師崎基本計画策定</span>
+                      ><span>マリンメッセもろざき基本計画策定</span>
                     </li>
                     <li>
                       <span class="history__date">92.10</span
