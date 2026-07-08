@@ -4,6 +4,22 @@
  */
 const LABS_DATA = [
   {
+    id: "query-method-bff",
+    tag: "HTTP / BFF",
+    year: "2026",
+    title: "HTTP QUERY メソッド × BFF / RLS 実験",
+    desc: "RFC 10008 の QUERY メソッドで、分析ダッシュボード BFF における RLS スコープと複雑な検索条件を JSON ボディで安全に渡すパターンを Hono で再現。OPTIONS の Allow / Accept-Query も含む。",
+    tech: ["Hono", "TypeScript", "Node.js", "Zod", "RFC 10008"],
+    highlights:
+      "RLS コンテキスト + ネストフィルタを QUERY ボディで受け渡し、GET のキャッシュ性と POST の表現力のギャップを検証",
+    links: {
+      demo: "https://query-method-bff.bissetmm.workers.dev",
+      github: "https://github.com/bissetmm/query-method-bff",
+      note: null,
+      hatena: null,
+    },
+  },
+  {
     id: "line-rich-menu-gui",
     tag: "LINE / GUI",
     year: "2026",
